@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+# Set specific value in column to X
+${1:temp} <- ${2:df}\$${3:column} == "${4:valueToChange}"
+${2:df}\$${3:column}[${1:temp}] <- ${5:newValue}
+${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>changeval</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

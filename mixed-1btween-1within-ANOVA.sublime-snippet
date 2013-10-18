@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+aov.${1:nameValue} = aov(${2:depVar} ~ ${3:indVar1(btween)}*${4:indVar2(w/in)} + Error(${5:participant}/${4:indVar2(w/in)}), data=${6:dataName})
+summary(aov.${1:nameValue})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>aov</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

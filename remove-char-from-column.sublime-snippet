@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+# remove unwanted characters from column		
+${1:df}\$${2:column} <- gsub("${3:unwantedChar}", "${4:}", paste(${1:df}\$${2:column}))
+${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>removechar</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

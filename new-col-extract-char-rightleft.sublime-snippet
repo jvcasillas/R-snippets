@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+# new column based on chars of old column from right to left		
+library(stringr)
+${1:df}\$${2:column} <- str_sub(${1:df}\$${3:oldCol}, start= -${4:6})
+${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>newcolr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
