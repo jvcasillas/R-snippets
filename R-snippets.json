@@ -1,7 +1,7 @@
 {
 	"name": "R-snippets",
 	"details": "https://github.com/jvcasill/R-snippets",
-	"releases": [
+	"releases": [1.0.0
 		{
 			"details": "https://github.com/jvcasill/R-snippets/blob/master/README.md"
 		}
