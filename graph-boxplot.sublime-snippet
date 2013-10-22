@@ -1,9 +1,11 @@
 <snippet>
 	<content><![CDATA[
+# Create boxplot
 boxplot(${1:DV}~${2:IV}, data=${3:dataName}, horizontal=${4:FALSE}, legend=${5:T}, xlab="${6:xLabel}", ylab="${7:yLabel}", ylim=c(${8:0},${9:100}), main="${10:main label here}")
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>plot</tabTrigger>
+	<tabTrigger>graph</tabTrigger>
+	<description></description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.r</scope>
 </snippet>

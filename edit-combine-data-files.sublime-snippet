@@ -1,13 +1,14 @@
 <snippet>
 	<content><![CDATA[
-# load files and combine them vertically
+# Combine files vertically into large data frame
 temp <- list.files(path="${1:/full/path}", full.names=TRUE)
 myfiles = lapply(temp, read.delim,sep = "\t")
 ${2:df} <- do.call("rbind",myfiles)
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>combine</tabTrigger>
+	<tabTrigger>edit</tabTrigger>
+	<description></description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.r</scope>
 </snippet>

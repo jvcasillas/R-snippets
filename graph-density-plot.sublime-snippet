@@ -1,9 +1,11 @@
 <snippet>
 	<content><![CDATA[
+# Density plot
 plot(density(${1:DV},na.rm=${2:TRUE}, data=${3:dataName}, legend=${4:T}, xlab="${5:xLabel}", ylab="${6:yLabel}", main="${7:main label here}")
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>plot</tabTrigger>
+	<tabTrigger>graph</tabTrigger>
+	<description></description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.r</scope>
 </snippet>

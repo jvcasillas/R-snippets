@@ -1,0 +1,14 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+# t-test: # independent 2-group, 2 level IV
+${1:testName} <- t.test(${2:DV}~${3:IV}, data=${4:df})
+summary(${1:testName})
+${0}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ttest</tabTrigger>
+  <description>Independent 2-group t-test</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r</scope>
+</snippet>

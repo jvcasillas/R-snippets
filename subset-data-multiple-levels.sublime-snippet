@@ -1,9 +1,11 @@
 <snippet>
 	<content><![CDATA[
+# subset multiple factors at once
 ${1:subsetname} = subset(${2:dataFileName},${3:factorName}=="${4:levelName}") | (${5:factor2Name}=="${6:level2Name}") $0
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>subset</tabTrigger>
+	<description></description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.r</scope>
 </snippet>

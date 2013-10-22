@@ -1,11 +1,12 @@
 <snippet>
 	<content><![CDATA[
-# get means of subsets of factors
+# get descriptive statistics of subsets of factors
 ${1:df} <- aggregate(${2:dv} ~ ${3:factor1} + ${4:factor2} + ${5:factor3}, data = ${6:data}, FUN = ${7:mean})
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>means</tabTrigger>
+	<tabTrigger>desc</tabTrigger>
+	<description></description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.r</scope>
 </snippet>

@@ -5,7 +5,8 @@ ${1:df}\$${2:column} <- gsub("${3:unwantedChar}", "${4:}", paste(${1:df}\$${2:co
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>removechar</tabTrigger>
+	<tabTrigger>edit</tabTrigger>
+	<description></description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.r</scope>
 </snippet>

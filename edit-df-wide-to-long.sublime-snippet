@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-# Convert table to long format for with-in subjects ANOVA
+# Convert wide table to long format
 library(reshape2)
 ${1:data}.long = melt(${1:data}, id = c("${2:participant}","${3:column}","${4:age}"), # keep these columns the same
                   measure = c("${5:level1}","${6:level2}"), 				 # Put these two columns into a new column
@@ -8,7 +8,8 @@ ${1:data}.long = melt(${1:data}, id = c("${2:participant}","${3:column}","${4:ag
 summary(${1:data}.long)
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>aov</tabTrigger>
+	<tabTrigger>edit</tabTrigger>
+	<description></description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.r</scope>
 </snippet>

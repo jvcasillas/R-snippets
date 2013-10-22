@@ -5,7 +5,8 @@ ${1:df}\$${2:newCol} <- substr(${3:df}\$${4:oldCol}, start=${5:1}, stop=${6:3})
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>newcol</tabTrigger>
+	<tabTrigger>edit</tabTrigger>
+	<description></description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.r</scope>
 </snippet>

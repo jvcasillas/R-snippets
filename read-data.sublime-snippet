@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[
-#reorder columns
-${1:df} <- ${1:df}[,c(${2:1,5,2,3,4})]
-${0}
+# read data
+${1:dataName} = read.${2:delim|table}("${3:/Full/Path/}", header=${4:TRUE})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>rocol</tabTrigger>
+	<tabTrigger>read</tabTrigger>
+	<description></description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.r</scope>
 </snippet>
