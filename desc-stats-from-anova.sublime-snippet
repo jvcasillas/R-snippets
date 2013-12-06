@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 # Get descriptives from ANOVA table
-model.tables(${1:aov.name}, "means")
+model.tables(aov.${1:name}, "means")
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>desc</tabTrigger>

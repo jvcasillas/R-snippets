@@ -6,7 +6,7 @@ summary(aov.${1:nameValue})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>aov</tabTrigger>
-	<description></description>
+	<description>One-way between subjects ANOVA</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.r</scope>
 </snippet>
