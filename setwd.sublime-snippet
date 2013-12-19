@@ -1,0 +1,13 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+# Set working directory
+setwd("${1:~/Desktop/}${2:}")
+${0}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>wd</tabTrigger>
+  <description>Set working directory</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r</scope>
+</snippet>
