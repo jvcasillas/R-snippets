@@ -5,7 +5,7 @@ ${1:dataName} = read.${2:delim|table}("${3:/Full/Path/}", header=${4:TRUE})
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>read</tabTrigger>
-	<description></description>
+	<description>Read data into R</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.r</scope>
 </snippet>

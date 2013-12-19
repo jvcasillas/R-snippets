@@ -5,7 +5,7 @@ model.tables(aov.${1:name}, "means")
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>desc</tabTrigger>
-	<description></description>
+	<description>Get descriptives from ANOVA table</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.r</scope>
 </snippet>

@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
 # write table
-write.table(${1:df}, "${2:fileName}.txt", row.names=${3:F}, quote=${4:F}, sep="${5:\t}")
+write.table(${1:df}, "${2:fileName}.${3:txt}", row.names=${4:F}, quote=${5:F}, sep="${6:\t}")
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>save</tabTrigger>
-	<description></description>
+	<description>Save table/df</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.r</scope>
 </snippet>

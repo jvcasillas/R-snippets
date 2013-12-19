@@ -4,7 +4,7 @@
 install.packages("${1:packageName}")
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>install</tabTrigger>
+  <tabTrigger>read</tabTrigger>
   <description>install r package</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.r</scope>

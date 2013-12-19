@@ -5,7 +5,7 @@ ${1:subsetname} = subset(${2:dataFileName},${3:factorName}=="${4:levelName}")$0
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>subset</tabTrigger>
-	<description></description>
+	<description>Subset a dataframe</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.r</scope>
 </snippet>

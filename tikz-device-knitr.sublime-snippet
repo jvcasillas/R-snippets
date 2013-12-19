@@ -10,7 +10,7 @@ require(tikzDevice)
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>tikz</tabTrigger>
-	<description></description>
+	<description>Tikz: R to LaTeX</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.r</scope>
 </snippet>

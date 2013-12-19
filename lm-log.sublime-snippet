@@ -4,6 +4,11 @@
 # Logistic regression model
 ${1:modelName} <- glm(${2:DV}~${3:predictor1}${4:+*}${5:predictor2}, data=${6:df}, family="binomial")
 ${1:modelName}
+
+# test normality of residuals
+hist(residuals(${1:modelName}))
+qqnorm(residuals(${1:modelName}))
+qqline(residuals(${1:modelName}))
 ${0}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

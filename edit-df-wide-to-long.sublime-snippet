@@ -2,14 +2,16 @@
 	<content><![CDATA[
 # Convert wide table to long format
 library(reshape2)
-${1:data}.long = melt(${1:data}, id = c("${2:participant}","${3:column}","${4:age}"), # keep these columns the same
-                  measure = c("${5:level1}","${6:level2}"), 				 # Put these two columns into a new column
-                  variable.name="${7:factorName}") 					# Name of the new column with the labels
+${1:data}.long = melt(${1:data}, 
+			id = c("${2:participant}","${3:column}","${4:age}"), # keep these columns the same
+            measure = c("${5:level1}","${6:level2}"), # Put these two columns into a new column
+            variable.name="${7:factorName}") # Name of the new column with the labels
+
 summary(${1:data}.long)
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>edit</tabTrigger>
-	<description></description>
+	<description>Table: wide to long format</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.r</scope>
 </snippet>

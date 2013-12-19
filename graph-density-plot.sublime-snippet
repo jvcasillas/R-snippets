@@ -4,8 +4,8 @@
 plot(density(${1:DV},na.rm=${2:TRUE}, data=${3:dataName}, legend=${4:T}, xlab="${5:xLabel}", ylab="${6:yLabel}", main="${7:main label here}")
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>graph</tabTrigger>
-	<description></description>
+	<tabTrigger>plot</tabTrigger>
+	<description>Density plot</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.r</scope>
 </snippet>
