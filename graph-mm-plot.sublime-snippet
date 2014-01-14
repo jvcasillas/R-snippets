@@ -1,0 +1,20 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+# prediction lines of mixed model
+plot(${1:df}\$${2:dv}, ${1:df}\$${3:ffactor}, pch=16, col=rgb(0,0,204,102,maxColorValue=255)) #scatterplot
+${4:groupCoefs} <- data.frame(coef(${5:modelName})\$${6:coefYouWant})
+${7:grandIntercept} <- unlist(fixef(${5:modelName})[1])
+${8:grandSlope} <- unlist(fixef(${5:modelName})[2])
+for (i in 1:nrow(${4:groupCoefs})) {
+  abline(${4:groupCoefs}[i,1], ${4:groupCoefs}[i,2], col=rgb(0,0,0,102,maxColorValue=255))
+}
+abline(${7:grandIntercept}, ${8:grandSlope}, col="red", lwd=1.5)
+${0}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>plot</tabTrigger>
+  <description>prediction lines of mixed model</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r, comment.line.number-sign.r, punctuation.definition.comment.r</scope>
+</snippet>

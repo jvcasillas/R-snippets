@@ -1,0 +1,12 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+${1:groupCoefs} <- data.frame(coef(${2:modelName})\$${3:coefYouWant})
+${0}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>coef</tabTrigger>
+  <description>extract model coefficients</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r</scope>
+</snippet>

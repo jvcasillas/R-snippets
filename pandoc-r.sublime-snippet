@@ -1,0 +1,20 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+# Set working directory
+setwd("${1:~/Desktop/}")
+
+# Load packages
+library(knitr)
+library(markdown)
+
+# Create slides
+knit("${2:rmarkdownFileName}.Rmd")
+system("pandoc -s -S -i -t Slidy --mathjax ${2:markdownFileName}.md -o ${2:htmlFileName}.html")
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>pandoc</tabTrigger>
+  <description>R code to creat html5 file from .Rmd</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r, comment.line.number-sign.r, punctuation.definition.comment.r</scope>
+</snippet>
