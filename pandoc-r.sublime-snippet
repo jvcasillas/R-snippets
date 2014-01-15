@@ -11,6 +11,9 @@ library(markdown)
 # Create slides
 knit("${2:rmarkdownFileName}.Rmd")
 system("pandoc -s -S -i -t Slidy --mathjax ${2:markdownFileName}.md -o ${2:htmlFileName}.html")
+
+# Create pdf
+system("pandoc ${2:markdownFileName}.md -o ${2:markdownFileName}.pdf")
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>pandoc</tabTrigger>
