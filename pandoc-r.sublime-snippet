@@ -18,6 +18,12 @@ system("pandoc -s ${2:markdownFileName}.md -o ${2:markdownFileName}.pdf")
 # Create .tex file
 system("pandoc -s ${2:markdownFileName}.md -o ${2:markdownFileName}.tex")
 
+options(rstudio.markdownToHTML = 
+  function(inputFile, outputFile) {      
+    system(paste("pandoc", "-s -S -i -t Slidy --mathjax", shQuote(inputFile), "-o", shQuote(outputFile)))
+  }
+)
+
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>pandoc</tabTrigger>
