@@ -7,20 +7,20 @@ Check out the project page at www.jvcasillas.com/R-snippets
 
 Just type the trigger and hit the tab key. For example...
 ```
-  lm
+lm
 ```
 Expands to...
 ```
-  # load lme4 for mixed models
-	library(lme4)
+# load lme4 for mixed models
+library(lme4)
 
-	# random intercept and random slope model
-	modelName = lmer(DV ~ fixedFactor1 +* fixedFactor2 + (1 + randomSlope|randomInt), data=df)
-	modelName
+# random intercept and random slope model
+modelName = lmer(DV ~ fixedFactor1 +* fixedFactor2 + (1 + randomSlope|randomInt), data=df)
+modelName
 
-	hist(residuals(modelName))
-	qqnorm(residuals(modelName))
-  qqline(residuals(modelName))
+hist(residuals(modelName))
+qqnorm(residuals(modelName))
+qqline(residuals(modelName))
 ```
 
 Main triggers:
