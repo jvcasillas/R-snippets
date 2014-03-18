@@ -5,7 +5,23 @@ This package includes a selection of R snippets for Sublimetext that I find usef
 
 Check out the project page at www.jvcasillas.com/R-snippets
 
-Just type the trigger and hit the tab key.
+Just type the trigger and hit the tab key. For example...
+```
+  lm
+```
+Expands to...
+```
+  # load lme4 for mixed models
+	library(lme4)
+
+	# random intercept and random slope model
+	modelName = lmer(DV ~ fixedFactor1 +* fixedFactor2 + (1 + randomSlope|randomInt), data=df)
+	modelName
+
+	hist(residuals(modelName))
+	qqnorm(residuals(modelName))
+  qqline(residuals(modelName))
+```
 
 Main triggers:
 - "plot": templates for plotting in base R
