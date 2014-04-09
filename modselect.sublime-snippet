@@ -1,15 +1,10 @@
 <snippet>
 	<content><![CDATA[
-
-
-- aquí integro el fragmento tuyo para comparar modelos mediante AIC
-- sin nomás pegarlo aquí, no sé enlazar (1) la función modselect.r2() que escribí ni (2) la función rsquared.glmm() de de la que depende (véase https://github.com/jslefche/rsquared.glmer)
--- conque ¿a la mejor sabes tú mejor qué hay que hacer?
-
-
-#------------------
+#------------------------------------------------------------------------
 #Select by "R"²		("lm", "lme", "mer" or "merMod")
-#------------------
+#------------------------------------------------------------------------
+library(devtools)${0}
+source_url("https://gist.githubusercontent.com/mmarascio/26212abf20597d87f48e/raw/")${0}
 models=c(${1:fullModel},${2:reducedModel})${0}
 modselect.r2(models)${0}
 
