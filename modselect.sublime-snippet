@@ -1,16 +1,23 @@
 <snippet>
 	<content><![CDATA[
 
+#--------------------------------------------------------------------------------------------
+# Select by Akaike information criterion ("AIC") or by Bayesian information criterion ("BIC")
+#--------------------------------------------------------------------------------------------
+
+anova(${1:fullModel},${2:reducedModel},test="chisq")
+
 #------------------------------------------------------------------------
-  #Select by "R"²		("lm", "lme", "mer" or "merMod")
+# Select by "R"²		("lm", "lme", "mer" or "merMod")
 #------------------------------------------------------------------------
 
 library(devtools)
 source_url("https://gist.githubusercontent.com/mmarascio/26212abf20597d87f48e/raw/")
 
-${1:models}=c(${2:fullModel},${3:reducedModel})
-modselect.r2(${1:models})
+${3:models}=c(${1:fullModel},${2:reducedModel})
+modselect.r2(${3:models})
 ${0}
+
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
