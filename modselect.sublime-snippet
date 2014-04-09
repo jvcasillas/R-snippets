@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+
+
+- aquí integro el fragmento tuyo para comparar modelos mediante AIC
+- sin nomás pegarlo aquí, no sé enlazar (1) la función modselect.r2() que escribí ni (2) la función rsquared.glmm() de de la que depende (véase https://github.com/jslefche/rsquared.glmer)
+-- conque ¿a la mejor sabes tú mejor qué hay que hacer?
+
+
+#------------------
+#Select by "R"²		("lm", "lme", "mer" or "merMod")
+#------------------
+models=c(${1:fullModel},${2:reducedModel})${0}
+modselect.r2(models)${0}
+
+#-------------------------------------------------------------------------------------------------------------------------
+#Select by Akaike information criterion ("AIC") or by Bayesian information criterion ("BIC")
+#-------------------------------------------------------------------------------------------------------------------------
+anova(${1:fullModel},${2:reducedModel},test="chisq")${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>modselect</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.r</scope> -->
+</snippet>
