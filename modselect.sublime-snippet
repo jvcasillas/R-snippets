@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+#------------------
+#Select by "R"²		("lm", "lme", "mer" or "merMod")
+#------------------
+models=c(${1:fullModel},${2:reducedModel})${0}
+modselect.r2(models)${0}
+
+#-------------------------------------------------------------------------------------------------------------------------
+#Select by Akaike information criterion ("AIC") or by Bayesian information criterion ("BIC")
+#-------------------------------------------------------------------------------------------------------------------------
+anova(${1:fullModel},${2:reducedModel},test="chisq")${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>modselect</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.r</scope> -->
+</snippet>
