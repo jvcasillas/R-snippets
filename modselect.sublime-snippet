@@ -1,5 +1,12 @@
 <snippet>
 	<content><![CDATA[
+
+
+- aquí integro el fragmento tuyo para comparar modelos mediante AIC
+- sin nomás pegarlo aquí, no sé enlazar (1) la función modselect.r2() que escribí ni (2) la función rsquared.glmm() de de la que depende (véase https://github.com/jslefche/rsquared.glmer)
+-- conque ¿a la mejor sabes tú mejor qué hay que hacer?
+
+
 #------------------
 #Select by "R"²		("lm", "lme", "mer" or "merMod")
 #------------------
