@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 #------------------------------------------------------------------------
-#Select by "R"²		("lm", "lme", "mer" or "merMod")
+#Select by "R"²		(for "lm", "lme", "mer" or "merMod")
 #------------------------------------------------------------------------
 library(devtools)${0}
 source_url("https://gist.githubusercontent.com/mmarascio/26212abf20597d87f48e/raw/")${0}
