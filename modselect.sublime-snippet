@@ -7,8 +7,9 @@
 
 library(devtools)
 source_url("https://gist.githubusercontent.com/mmarascio/26212abf20597d87f48e/raw/")
-{1:models}=c(${2:fullModel},${3:reducedModel})
-modselect.r2({1:models})
+
+${1:models}=c(${2:fullModel},${3:reducedModel})
+modselect.r2(${1:models})
 ${0}
 
 ]]></content>
