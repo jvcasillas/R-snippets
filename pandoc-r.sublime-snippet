@@ -1,22 +1,7 @@
 <snippet>
   <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
-# Set working directory
-setwd("${1:~/Desktop/}")
-
-# Load packages
-library(knitr)
-library(markdown)
-
-# Create slides
-knit("${2:rmarkdownFileName}.Rmd")
-system("pandoc -s -S -i -t Slidy --mathjax ${2:markdownFileName}.md -o ${2:htmlFileName}.html")
-
-# Create pdf
-system("pandoc -s ${2:markdownFileName}.md -o ${2:markdownFileName}.pdf")
-
-# Create .tex file
-system("pandoc -s ${2:markdownFileName}.md -o ${2:markdownFileName}.tex")
+# Slidy presentations from Rmarkdown
 
 options(rstudio.markdownToHTML = 
   function(inputFile, outputFile) {      

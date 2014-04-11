@@ -2,6 +2,7 @@
 	<content><![CDATA[
 # read data
 ${1:dataName} = read.${2:delim|table}("${3:/Full/Path/}", header=${4:TRUE})
+${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>read</tabTrigger>

@@ -2,6 +2,7 @@
 	<content><![CDATA[
 # Tukey test
 TukeyHSD(aov(${1:depVar} ~ ${2:indVar}, data=${3:data}))
+${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ttest</tabTrigger>

@@ -3,6 +3,7 @@
 # Mixed design ANOVA: One between subjects factor and two within subjects factors
 aov.${1:nameValue} = aov(${2:depVar} ~ ${3:indVar1(btween)}*${4:indVar2(w/in1)}*${5:indVar3(w/in2)} + Error(${6:participant}/(${4:indVar2(w/in1)}*${5:indVar3(w/in2)})) + ${3:indVar1(btween)}, data=${7:dataName})
 summary(aov.${1:nameValue})
+${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>aov</tabTrigger>
