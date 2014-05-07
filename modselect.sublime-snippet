@@ -21,7 +21,7 @@ ${0}
 	<tabTrigger>modselect</tabTrigger>
 	<description>Model tests</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.r</scope> -->
+	<scope>source.r</scope>
 </snippet>
 
 

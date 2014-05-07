@@ -16,10 +16,10 @@ ${0}
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>modselect</tabTrigger>
+	<tabTrigger>minf</tabTrigger>
 	<description>Calculate min F prime</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.r</scope> -->
+	<scope>source.r</scope>
 </snippet>
 
 
