@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 
 # Select model via Akaike information criterion ("AIC")
 # or via Bayesian information criterion ("BIC")
@@ -17,11 +17,9 @@ ${0}
 
 
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>modselect</tabTrigger>
-	<description>Model tests</description>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.r</scope>
+  <tabTrigger>modselect</tabTrigger>
+  <description>Model tests</description>
+  <scope>source.r</scope>
 </snippet>
 
 

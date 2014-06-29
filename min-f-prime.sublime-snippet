@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 
 # Calculate " min F' "
 
@@ -7,19 +7,17 @@ library(devtools)
 source_url("https://gist.githubusercontent.com/mmarascio/f4399fb4206afb8bdb39/raw/")
 
 minF.fnc(
-	f.1=${1: "F"-ratio for given factor from by-subjects ANOVA},
-	df.1=c(${2: degrees of freedom_numerator thereof},${3: degrees of freedom_denominator thereof}),
-	f.2=${4: "F"-ratio for same factor from by-items ANOVA},
-	df.2=c(${5: degrees of freedom_numerator thereof},${6: degrees of freedom_denominator thereof})
+  f.1=${1: "F"-ratio for given factor from by-subjects ANOVA},
+  df.1=c(${2: degrees of freedom_numerator thereof},${3: degrees of freedom_denominator thereof}),
+  f.2=${4: "F"-ratio for same factor from by-items ANOVA},
+  df.2=c(${5: degrees of freedom_numerator thereof},${6: degrees of freedom_denominator thereof})
 )
 ${0}
 
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>minf</tabTrigger>
-	<description>Calculate min F prime</description>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.r</scope>
+  <tabTrigger>minf</tabTrigger>
+  <description>Calculate min F prime</description>
+  <scope>source.r</scope>
 </snippet>
 
 
