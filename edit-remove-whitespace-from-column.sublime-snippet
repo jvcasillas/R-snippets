@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+# remove leading/trailing whitespace from column		
+${1:df}\$${2:column} <- gsub("^\\\\s+|\\\\s+\$", "${3:}", paste(${1:df}\$${2:column}))
+${0}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>edit</tabTrigger>
+  <description>remove leading and trailing whitespace from column</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r</scope>
+</snippet>
