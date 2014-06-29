@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
 
-#-----Select model via Akaike information criterion ("AIC")-----#
-#-----or via Bayesian information criterion ("BIC")-----#
+# Select model via Akaike information criterion ("AIC")
+# or via Bayesian information criterion ("BIC")
 
 anova(${1:fullModel},${2:reducedModel},test="chisq")
 
-#-----Select via "R"² ("lm", "lme", "mer" or "merMod")-----#
+# Select via "R"² ("lm", "lme", "mer" or "merMod")
 
 library(devtools)
 source_url("https://gist.githubusercontent.com/mmarascio/26212abf20597d87f48e/raw/")

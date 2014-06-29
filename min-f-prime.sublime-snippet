@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 
-#-----Calculate " min F' "-----#
+# Calculate " min F' "
 
 library(devtools)
 source_url("https://gist.githubusercontent.com/mmarascio/f4399fb4206afb8bdb39/raw/")
