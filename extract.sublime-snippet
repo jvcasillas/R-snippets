@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+# Extract $1
+
+require(devtools)
+source_url(
+  url = "https://raw.githubusercontent.com/mmarascio/utilia/master/extraer.R",
+  sha1 = "0f284b375ff067dc5f86475196d7ff13df69e358"
+  )
+$1 <- extraer(
+  materia = "${1: what to extract: 'no_yaml' (e.g., HTML) or 'rmd'}",
+  escapar = ${2: whether to escape reserved characters: 'TRUE' or 'FALSE'},
+  ruta = "${3: working directory}",
+  patron = "${4: regex pattern to specify files to be processed}"
+)
+
+$0
+]]></content>
+  <tabTrigger>extract</tabTrigger>
+  <description>Import and parse contents of external files</description>
+  <scope>source.r</scope>
+</snippet>
