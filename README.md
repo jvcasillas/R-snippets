@@ -3,7 +3,7 @@ R-snippets
 
 This package includes a selection of R snippets for Sublimetext that I find useful when using R through SublimeREPL
 
-Check out the project page at www.jvcasillas.com/projects/R-snippets
+Check out the project page at http://www.jvcasillas.com/code/projects/R-snippets
 
 Just type the trigger and hit the tab key. For example...
 ```
