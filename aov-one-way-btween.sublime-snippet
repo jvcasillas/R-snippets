@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 # One-way between subjects ANOVA
-aov.${1:nameValue} = aov(${2:depVar} ~ ${3:indVar}, data=${4:dataName})
+aov.${1:nameValue} <- aov(${2:depVar} ~ ${3:indVar}, data = ${4:dataName})
 summary(aov.${1:nameValue})
 ${0}
 ]]></content>

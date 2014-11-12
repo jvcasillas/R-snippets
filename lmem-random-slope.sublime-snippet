@@ -5,7 +5,7 @@
 library(lme4)
 
 # random slope model (includes randomInt in formula, but 0 means it doesnt use it)
-${1:modelName} = lmer(${2:DV} ~ ${3:fixedFactor1} ${4:+*} ${5:fixedFactor2} + (0 + ${6:randomSlope}|${7:randomInt}), data=${8:df})
+${1:modelName} <- lmer(${2:DV} ~ ${3:fixedFactor1} ${4:+*} ${5:fixedFactor2} + (0 + ${6:randomSlope}|${7:randomInt}), data = ${8:df})
 ${1:modelName}
 
 hist(residuals(${1:modelName}))

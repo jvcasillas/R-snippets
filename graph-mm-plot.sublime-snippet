@@ -1,5 +1,4 @@
 <snippet>
-  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
 # prediction lines of mixed model
 plot(${1:df}\$${2:dv}, ${1:df}\$${3:ffactor}, pch=16, col=rgb(0,0,204,102,maxColorValue=255)) #scatterplot

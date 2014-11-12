@@ -1,5 +1,4 @@
 <snippet>
-  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
 ${1:groupCoefs} <- data.frame(coef(${2:modelName})\$${3:coefYouWant})
 ${0}

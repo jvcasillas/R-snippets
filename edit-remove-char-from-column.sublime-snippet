@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-# remove unwanted characters from column		
+# remove unwanted characters from column
 ${1:df}\$${2:column} <- gsub("${3:unwantedChar}", "${4:}", paste(${1:df}\$${2:column}))
 ${0}
 ]]></content>

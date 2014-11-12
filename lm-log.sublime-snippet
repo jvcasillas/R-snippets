@@ -2,8 +2,8 @@
   <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
 # Logistic regression model
-${1:modelName} <- glm(${2:DV}~${3:predictor1}${4:+*}${5:predictor2}, data=${6:df}, family="binomial")
-${1:modelName}
+${1:modelName} <- glm(${2:DV} ~ ${3:predictor1} ${4:+*} ${5:predictor2}, data = ${6:df}, family = "binomial")
+summary(${1:modelName})
 
 # test normality of residuals
 hist(residuals(${1:modelName}))

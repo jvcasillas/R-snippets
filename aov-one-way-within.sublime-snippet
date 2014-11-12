@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 # One-way withing subjects ANOVA
-aov.${1:nameValue} = aov(${2:depVar} ~ ${3:indVar(w/in)} + Error(${4:participant}/${3:indVar(w/in)}), data=${5:dataName})
+aov.${1:nameValue} <- aov(${2:depVar} ~ ${3:indVar(w/in)} + Error(${4:participant}/${3:indVar(w/in)}), data = ${5:dataName})
 summary(aov.${1:nameValue})
 ${0}
 ]]></content>

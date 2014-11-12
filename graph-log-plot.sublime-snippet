@@ -1,14 +1,14 @@
 <snippet>
-  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
 quartz(title="${1:Title}") 
-plot(${2:df}\$${3:predictor},${2:df}\$${4:dv},xlab="${5:xlab}",ylab="${6:ylab}") 
+plot(${2:df}\$${3:predictor}, ${2:df}\$${4:dv}, xlab = "${5:xlab}", ylab = "${6:ylab}") 
+
 # draws a curve based on prediction from logistic regression model
-curve(predict(${7:modelName},data.frame(${3:predictor}=x),type="resp"),add=TRUE) 
-points(${3:predictor},fitted(${7:modelName}),pch=20) 
+curve(predict(${7:modelName}, data.frame(${3:predictor} = x),type = "resp"), add = TRUE) 
+points(${3:predictor}, fitted(${7:modelName}), pch = 20) 
 
 library(popbio)
-logi.hist.plot(${3:predictor},${4:dv},boxp=FALSE,type="hist",col="gray")
+logi.hist.plot(${3:predictor}, ${4:dv}, boxp = FALSE, type = "hist", col = "gray")
 
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

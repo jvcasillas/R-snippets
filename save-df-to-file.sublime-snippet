@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 # write table
-write.table(${1:df}, "${2:fileName}.${3:txt}", row.names=${4:F}, quote=${5:F}, sep="${6:\t}")
+write.table(${1:df}, "${2:fileName}.${3:txt}", row.names = ${4:F}, quote = ${5:F}, sep = "${6:\t}")
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

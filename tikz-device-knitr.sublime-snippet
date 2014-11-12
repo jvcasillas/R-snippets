@@ -4,7 +4,7 @@
 require(tikzDevice)
 	options(tikzLatexPackages = c(getOption("tikzLatexPackages"), 
 	"\\\usepackage{tipa}"))
-	tikz("${2:full/path/to/file}.tex", standAlone=${3:TRUE}, width=${4:5}, height=${5:5})
+	tikz("${2:full/path/to/file}.tex", standAlone = ${3:TRUE}, width = ${4:5}, height = ${5:5})
 	${6:plot(cars)}
 dev.off()
 ${0}

@@ -1,10 +1,9 @@
 <snippet>
-  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
 library(${1:packageName})
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>read</tabTrigger>
+  <tabTrigger>lib</tabTrigger>
   <description>read package from library</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.r</scope>

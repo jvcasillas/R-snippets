@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 # read data
-${1:dataName} = read.${2:delim|table}("${3:/Full/Path/}", header=${4:TRUE}, quote=${5:""})
+${1:dataName} <- read.${2:delim|table}("${3:/Full/Path/}", header = ${4:TRUE}, quote = ${5:""})
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 # Mixed design ANOVA: 1 between subjects factor and 1 withing subjects factor
-aov.${1:nameValue} = aov(${2:depVar} ~ ${3:indVar1(btween)}*${4:indVar2(w/in)} + Error(${5:participant}/${4:indVar2(w/in)}), data=${6:dataName})
+aov.${1:nameValue} <- aov(${2:depVar} ~ ${3:indVar1(btween)} * ${4:indVar2(w/in)} + Error(${5:participant}/${4:indVar2(w/in)}), data = ${6:dataName})
 summary(aov.${1:nameValue})
 ${0}
 ]]></content>

@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 # Save plot as pdf
-pdf(file="${1:fileName}.pdf")
+pdf(file = "${1:fileName}.pdf")
 ${2:plotHere}
 dev.off()
 ${0}
