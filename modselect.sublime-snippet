@@ -2,7 +2,7 @@
   <content><![CDATA[
 
 # Likelihood ratio test
-anova(${1:fullModel}, ${2:reducedModel}, test = "chisq")
+anova(${1:fullModel}, ${2:reducedModel}, test = "Chisq")
 ${0}
 ]]></content>
   <tabTrigger>lm</tabTrigger>
