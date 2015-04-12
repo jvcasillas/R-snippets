@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
 # sort (reorder) columns
-${1:df} <- ${1:df}[,c(${2:1,5,2,3,4})]
+${1:df} <- ${1:df}[,c(${2:1,2,3,4})]
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>edit</tabTrigger>
 	<description>Sort columns of dataframe</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.r</scope>
+	<scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

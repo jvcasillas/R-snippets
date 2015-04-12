@@ -6,16 +6,13 @@ library(lme4)
 
 # random intercept model
 ${1:modelName} <- lmer(${2:DV} ~ ${3:fixedFactor1} ${4:+*} ${5:fixedFactor2} + (1|${6:randomInt}), data = ${7:df})
-${1:modelName}
+summary(${1:modelName})
 
-hist(residuals(${1:modelName}))
-qqnorm(residuals(${1:modelName}))
-qqline(residuals(${1:modelName}))
 ${0}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>lmem</tabTrigger>
   <description>random intercept model</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.r, comment.line.number-sign.r, punctuation.definition.comment.r</scope>
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

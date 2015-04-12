@@ -1,11 +1,12 @@
 <snippet>
   <content><![CDATA[
+# Coefficients of lm
 ${1:groupCoefs} <- data.frame(coef(${2:modelName})\$${3:coefYouWant})
 ${0}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>coef</tabTrigger>
+  <tabTrigger>lm</tabTrigger>
   <description>extract model coefficients</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.r</scope>
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

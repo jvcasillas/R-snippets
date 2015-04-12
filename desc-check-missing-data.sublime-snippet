@@ -1,10 +1,11 @@
 <snippet>
   <content><![CDATA[
+# check for missing data
 which(is.na(${1:dataFrame})==T)
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>desc</tabTrigger>
   <description>check for missing data</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.r</scope>
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

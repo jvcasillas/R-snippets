@@ -8,5 +8,5 @@ ${0}
   <tabTrigger>r2</tabTrigger>
   <description>marginal and conditional R2</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.r, meta.function-call.r, support.function.r</scope>
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

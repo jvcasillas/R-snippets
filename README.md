@@ -6,21 +6,21 @@ This package includes a selection of R snippets for Sublimetext that I find usef
 Check out the project page at http://www.jvcasillas.com/code/projects/R-snippets
 
 Just type the trigger and hit the tab key. For example...
+
 ```
 lm
 ```
+
 Expands to...
+
 ```
 # load lme4 for mixed models
 library(lme4)
 
 # random intercept and random slope model
-modelName = lmer(DV ~ fixedFactor1 +* fixedFactor2 + (1 + randomSlope|randomInt), data=df)
-modelName
+modelName <- lmer(DV ~ fixedFactor1 +* fixedFactor2 + (1 + randomSlope|randomInt), data=df)
+summary(modelName)
 
-hist(residuals(modelName))
-qqnorm(residuals(modelName))
-qqline(residuals(modelName))
 ```
 
 Main triggers:
@@ -37,3 +37,13 @@ Extras:
 - "read": read/load/install data/packages into R
 - "save": save plots, dfs, tables, etc.
 - "tikz": template for creating R plots in LaTeX
+
+**Note** All snippets have the following scopes:
+
+```
+source.r, text.html.markdown.knitr, text.tex.latex
+```
+
+## To add
+
+- coursera

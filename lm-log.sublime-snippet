@@ -1,19 +1,14 @@
 <snippet>
-  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
   <content><![CDATA[
 # Logistic regression model
 ${1:modelName} <- glm(${2:DV} ~ ${3:predictor1} ${4:+*} ${5:predictor2}, data = ${6:df}, family = "binomial")
 summary(${1:modelName})
 
-# test normality of residuals
-hist(residuals(${1:modelName}))
-qqnorm(residuals(${1:modelName}))
-qqline(residuals(${1:modelName}))
 ${0}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>lm</tabTrigger>
   <description>Logistic regression model</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.r</scope>
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

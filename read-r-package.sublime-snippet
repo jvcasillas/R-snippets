@@ -6,5 +6,5 @@ library(${1:packageName})
   <tabTrigger>lib</tabTrigger>
   <description>read package from library</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.r</scope>
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

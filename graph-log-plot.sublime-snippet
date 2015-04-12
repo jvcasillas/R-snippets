@@ -15,5 +15,5 @@ logi.hist.plot(${3:predictor}, ${4:dv}, boxp = FALSE, type = "hist", col = "gray
   <tabTrigger>plot</tabTrigger>
   <description>Plot logistic regression data</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.r, meta.function-call.r, support.function.r</scope>
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

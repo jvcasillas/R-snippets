@@ -8,5 +8,5 @@ ${0}
 	<tabTrigger>edit</tabTrigger>
 	<description>Remove char from column</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.r</scope>
+	<scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

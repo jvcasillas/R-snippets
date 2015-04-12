@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
 # subset multiple factors at once
-${1:subsetname} <- subset(${2:dataFileName}, ${3:factorName} == "${4:levelName}") | (${5:factor2Name} == "${6:level2Name}") 
+${1:subsetname} <- subset(${2:dataFileName}, ${3:factorName} == "${4:levelName}") & (${5:factor2Name} == "${6:level2Name}") 
 $0
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>subset</tabTrigger>
 	<description>Subset multiple factors at once</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.r</scope>
+	<scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>

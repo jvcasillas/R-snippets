@@ -1,14 +1,12 @@
 <snippet>
-
   <content><![CDATA[
-# t-test: # independent 2-group, 2 level IV
-${1:testName} <- t.test(${2:DV} ~ ${3:IV}, data = ${4:df})
-summary(${1:testName})
-${0}
+# Drop levels
+droplevels(${1:df}\$${2:factor})
+$0
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>ttest</tabTrigger>
-  <description>Independent 2-group t-test</description>
+  <tabTrigger>edit</tabTrigger>
+  <description>Drop levels from subsetted dataframe</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
 </snippet>
