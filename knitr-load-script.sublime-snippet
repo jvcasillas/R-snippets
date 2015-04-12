@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+```\{r echo=${1:FALSE}\}
+library(knitr)
+read_chunk('${2:cleanData}.${3:R}')
+```
+$0
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>knitr</tabTrigger>
+  <description>Read r script</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
+</snippet>

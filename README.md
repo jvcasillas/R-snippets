@@ -48,4 +48,6 @@ source.r, text.html.markdown.knitr, text.tex.latex
 
 ## To add
 
+- knitr
+- dplyr
 - coursera
