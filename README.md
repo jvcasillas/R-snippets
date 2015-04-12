@@ -23,7 +23,8 @@ summary(modelName)
 
 ```
 
-Main triggers:
+## Main triggers
+
 - "plot": templates for plotting in base R
 - "edit": options useful for data cleansing and saving
 - "desc": descriptive statistics of data
@@ -32,7 +33,8 @@ Main triggers:
 - "lm": linear and logistic regression
 - "lmem": linear mixed effects models
 
-Extras:
+## Extras
+
 - "subset": make subsets of a DF
 - "read": read/load/install data/packages into R
 - "save": save plots, dfs, tables, etc.
