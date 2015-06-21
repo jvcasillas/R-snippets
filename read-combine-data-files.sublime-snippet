@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
 # Combine files vertically into large data frame
-temp <- list.files(path = "${1:/full/path}", full.names = TRUE)
-myfiles = lapply(temp, read.delim, sep = "${2:\t}")
-${3:df} <- do.call("rbind", myfiles)
+temp <- list.files(path = "${1:/full/path}", full.names = ${2:TRUE}, pattern = ${3:".csv"})
+myfiles = lapply(temp, read.csv, sep = "${4:,}")
+${5:df} <- do.call("rbind", myfiles)
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

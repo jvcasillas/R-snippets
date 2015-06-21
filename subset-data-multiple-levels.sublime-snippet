@@ -1,8 +1,6 @@
 <snippet>
 	<content><![CDATA[
-# subset multiple factors at once
-${1:subsetname} <- subset(${2:dataFileName}, ${3:factorName} == "${4:levelName}") & (${5:factor2Name} == "${6:level2Name}") 
-$0
+${1:df}[${1:df}\$${2:factorName} ${3:==} "${4:levelName}" ${5:&} ${1:df}\$${6:factor2Name} ${7:==} "${8:level2Name}", ]${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>subset</tabTrigger>

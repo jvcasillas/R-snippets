@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-# get descriptive statistics of subsets of factors
+# Get descriptive statistics of subsets of factors
 ${1:df} <- aggregate(${2:dv} ~ ${3:factor1} + ${4:factor2} + ${5:factor3}, data = ${6:data}, FUN = ${7:function(x) c(mean = mean(x), sd = sd(x))})
 ${0}
 ]]></content>

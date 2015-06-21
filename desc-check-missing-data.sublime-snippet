@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 # check for missing data
-which(is.na(${1:dataFrame})==T)
+which(is.na(${1:dataFrame}) == T)
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>desc</tabTrigger>

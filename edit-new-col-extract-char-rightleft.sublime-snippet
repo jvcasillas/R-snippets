@@ -2,7 +2,7 @@
 	<content><![CDATA[
 # new column based on chars of old column (right to left)
 library(stringr)
-${1:df}\$${2:column} <- str_sub(${1:df}\$${3:oldCol}, start= -${4:6})
+${1:df}\$${2:column} <- str_sub(${1:df}\$${3:oldCol}, start = -${4:6})
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
