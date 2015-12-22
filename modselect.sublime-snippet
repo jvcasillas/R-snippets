@@ -7,5 +7,5 @@ ${0}
 ]]></content>
   <tabTrigger>lm</tabTrigger>
   <description>Model tests</description>
-  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex, text.html.markdown.rmarkdown</scope>
 </snippet>

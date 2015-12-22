@@ -9,5 +9,5 @@ ${0}
 	<tabTrigger>aov</tabTrigger>
 	<description>Mixed design anova: 2 between 1 within</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
+	<scope>source.r, text.html.markdown.knitr, text.tex.latex, text.html.markdown.rmarkdown</scope>
 </snippet>
