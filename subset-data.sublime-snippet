@@ -6,5 +6,5 @@ ${1:df}[${1:df}\$${2:factorName} ${3:==} "${4:levelName}", ]${0}
 	<tabTrigger>subset</tabTrigger>
 	<description>Subset a dataframe</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
+	<scope>source.r, text.html.markdown.knitr, text.tex.latex, text.html.markdown.rmarkdown</scope>
 </snippet>

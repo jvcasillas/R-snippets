@@ -10,5 +10,5 @@ qqline(residuals(${1:modelName}))
   <tabTrigger>lm</tabTrigger>
   <description>Test normality of residuals</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.r, text.html.markdown.knitr, text.tex.latex</scope>
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex, text.html.markdown.rmarkdown</scope>
 </snippet>

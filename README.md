@@ -43,7 +43,7 @@ summary(modelName)
 **Note** All snippets have the following scopes:
 
 ```
-source.r, text.html.markdown.knitr, text.tex.latex
+source.r, text.html.markdown.knitr, text.tex.latex, text.html.markdown.rmarkdown
 ```
 
 ## To add
