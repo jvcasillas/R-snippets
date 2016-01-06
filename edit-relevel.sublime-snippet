@@ -1,0 +1,13 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+# Relevel factor
+${1:df}\$${2:factor} <- factor(${1:df}\$${2:factor}, levels = c("${3:first}", "${4:second}", "${5:etc}"))
+$0
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>edit</tabTrigger>
+  <description>Change order of levels of a factor</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex, text.html.markdown.rmarkdown</scope>
+</snippet>
