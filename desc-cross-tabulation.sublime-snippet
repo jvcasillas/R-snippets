@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+xtabs(${1:response} ~ ${2:factor1} + ${3:factor2}, data = ${4:df})
+$0
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>desc</tabTrigger>
+  <description>Cross tabulation</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex, text.html.markdown.rmarkdown</scope>
+</snippet>
