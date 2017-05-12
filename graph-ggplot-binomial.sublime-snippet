@@ -1,0 +1,12 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+geom_smooth(method = "glm", method.args = list(family = "binomial")) +
+$0
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>plot</tabTrigger>
+  <description>Binomial smooth for ggplot</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r, text.html.markdown.knitr, text.tex.latex, text.html.markdown.rmarkdown</scope>
+</snippet>

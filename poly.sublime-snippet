@@ -1,0 +1,17 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+# Create higher order orthogonal polynomial
+${1:orth_poly} <- poly(unique(${2:df}\$${3:var}), ${4:2})
+
+# Add to dataframe 
+${2:df}[, paste("ot", 1:${4:2}, sep = "")] <- orth_poly[${2:df}\$${3:var}, 1:${4:2}]
+
+$0
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>poly</tabTrigger>
+  <description>Create higher order orthogonal polynomial variable</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.r, comment.line.number-sign.r, punctuation.definition.comment.r, text.html.markdown.knitr, text.tex.latex, text.html.markdown.rmarkdown</scope>
+</snippet>
